@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 40px;
+}
+h2 {
+text-align: center;
+font-weight: bold;
+}
+form {
+width: 50%;
+margin: auto;
+border: 1px solid #ccc;
+padding: 20px;
+}
+label {
+display: inline-block;
+width: 120px;
+margin-bottom: 10px;
+}
+input, select, textarea {
+margin-bottom: 10px;
+}
+textarea {
+width: 60%;
+height: 60px;
+}
+.buttons {
+margin-top: 10px;
+}
+.footer {
+text-align: center;
+font-size: 0.9em;
+color: #555;
+margin-top: 20px;
+}
+hr {
+margin: 20px 0;
+ }
+</style>
+</head>
+<body>
+ <h2>Student Registration Form</h2>
+<hr>
+ <form action="#" method="post">
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="fullname" placeholder="Enter your full name"><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter valid email"><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enterpassword"><br>
+<label>Gender:</label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other<br>
+<label for="course">Course:</label>
+<select id="course" name="course">
+<option>-- Select Course --</option>
+<option>B.Tech</option>
+<option>B.Sc</option>
+<option>B.Com</option>
+<option>MBA</option>
+<option>MCA</option>
+</select><br>
+<label for="contact">Contact No:</label>
+<input type="tel" id="contact" name="contact" placeholder="Enter phone number"><br>
+<label for="address">Address:</label><br>
+<textarea id="address" name="address" placeholder="Enter address"></textarea><br>
+<div class="buttons">
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+</div>
+</form>
+ <hr>
+<div class="footer">
+© 2025 Student Registration Portal
+</div>
+</body>
+</html>
